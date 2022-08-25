@@ -1,0 +1,70 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <!-- Add your site or application content here -->
+  <p>Hello world! This is SSE Output Checker.</p>
+
+  <input type="file" id="file_input">
+
+  <br/>
+
+  <input type="button" id="load" value="load" onclick="$('content').innerHTML = '';keystring = '';"/>
+
+  <p>Path Number</p>
+  <div style="color:#0000FF">
+    <p id="total_path">Total Path: ____</p>
+    <p id="path_no">Path No. : ____</p>
+    <p id="icfg_path">Show ICFGNode Path Here</p>
+  </div>
+  <input type="button" id="last_path" value="LastPath" onclick="$('content').innerHTML = '';keystring = '';"/>
+
+  <input type="button" id="next_path" value="NextPath" onclick="$('content').innerHTML = '';keystring = '';"/>
+
+
+  <p>Node Number</p>
+
+  <input type="button" id="last_node" value="LastNode"/>
+
+  <input type="button" id="next_node" value="NextNode"/>
+
+  <div style="color:#0000FF">
+    <p id="total_nodes"> Total Nodes: ____</p>
+    <p id="node_no"> Node Index: ____</p>
+    <p id="log_box"> Show Node Message Here</p>
+  </div>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
